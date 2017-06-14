@@ -3,7 +3,7 @@ before_action :find_activity_logs , only: [:show, :update,:destroy]
 before_action :activity_log_params , only: [:create, :update]
 
 def index
-render json: ActivityLog.all , status: 200
+paginate ActivityLog.unscoped, per_page: 15 
 end
 
 def show

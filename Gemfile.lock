@@ -87,8 +87,10 @@ GEM
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
     orm_adapter (0.5.0)
+    pager_api (0.2.3)
     puma (3.9.1)
     rack (2.0.3)
+    rack-cors (0.4.0)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (5.0.3)
@@ -158,6 +160,7 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
+    will_paginate (3.1.6)
 
 PLATFORMS
   ruby
@@ -170,12 +173,15 @@ DEPENDENCIES
   ffaker
   listen (~> 3.0.5)
   mysql2 (>= 0.3.18, < 0.5)
+  pager_api
   puma (~> 3.0)
+  rack-cors
   rails (~> 5.0.3)
   rspec-rails
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
+  will_paginate
 
 BUNDLED WITH
    1.13.6
